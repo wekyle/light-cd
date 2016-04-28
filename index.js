@@ -37,7 +37,7 @@ var main = function() {
   handler.on('push', function (event) {
     console.log(shelljs.exec('git pull').output)
     console.log(shelljs.exec('npm install').output)
-    console.log(shelljs.exec('pm2 gracefulReload all').output)
+    console.log(shelljs.exec('pm2 start pm2.json').output)
     console.log('Received a push event for %s to %s',
     event.payload.ref)
   })
