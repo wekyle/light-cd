@@ -9,7 +9,7 @@ want 30 second setup, without too many bells and whistles? this might suit. no j
 on remote server:
 
 ```
-sudo npm install light-cd -g
+sudo npm install wekyle/light-cd -g
 sudo npm install pm2 -g
 cd your-project-directory-that-is-already-checked-out-from-github
 lightcd init 
